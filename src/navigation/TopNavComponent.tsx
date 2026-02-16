@@ -81,7 +81,7 @@ const ExploreItem = ({ icon: Icon, title, description }: ExploreItemProps) => (
 
 const DashboardBackground = styled.div(() => ({
   height: '100vh',
-  background: 'radial-gradient(94.74% 64.44% at 29.03% 15.17%, #FFFFFF 0%, #90A5BB 100%)',
+  background: '#FFFFFF',
 }));
 
 const TopNavComponent = () => {
@@ -274,12 +274,7 @@ const TopNavComponent = () => {
       <Box
         overflow="hidden"
         position="relative"
-        borderRadius="large"
-        borderTopRightRadius="none"
-        borderBottomLeftRadius="none"
-        borderBottomRightRadius="none"
         height="calc(100vh - 56px)"
-        marginX={{ base: 'spacing.0', m: 'spacing.3' }}
       >
         <SideNavComponent
           isOpen={isSideBarOpen}
